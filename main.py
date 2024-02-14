@@ -168,9 +168,7 @@ while True:
             birdup_rett.bottom = base_rett.top
         gioco_attivo = collisioni(birdup_rett, lista_ostacoli_su + lista_ostacoli_giu)
 
-        # ... Il resto del tuo codice ...
 
-        # Itera su ogni ostacolo nella lista
         for ostacolo in lista_ostacoli_su + lista_ostacoli_giu:
             if birdup_rett.left > ostacolo.rett.right and not ostacolo.superato:
                 ostacolo.superato = True
